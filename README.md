@@ -1,6 +1,6 @@
 # Data Poisoning Attack & Detection Scanner
 
-A complete pipeline for injecting data-poisoning attacks into CIFAR-10 and detecting the poisoned samples before they compromise a model.
+A complete pipeline for injecting data-poisoning attacks into CIFAR-10 and detecting the poisoned samples before they compromise a model.Read the Final report [here](scd_2026_data_poisoning_report.pdf).
 
 ## Controlled campaign: selected solutions
 
@@ -267,4 +267,5 @@ run a reproducible experiment set with:
 
 The untouched CIFAR-10 test set is used for final accuracy. Backdoor ASR is
 reported separately on non-target test images after applying the trigger.
-# SCD-2026
+
+---

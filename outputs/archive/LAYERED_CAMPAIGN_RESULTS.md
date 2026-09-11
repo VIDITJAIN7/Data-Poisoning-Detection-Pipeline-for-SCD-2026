@@ -1,5 +1,5 @@
 # Layered campaign results
-
+ 
 This report records the complete campaign in `outputs/layered_campaign`.
 Every listed condition has a complete manifest and 30-epoch training histories.
 The test set was not used to choose a defense; candidate selection used the

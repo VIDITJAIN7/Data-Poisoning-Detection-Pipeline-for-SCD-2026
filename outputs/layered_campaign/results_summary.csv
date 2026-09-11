@@ -1,0 +1,11 @@
+attack,rate,seed,baseline_acc,poisoned_acc,corrected_or_selected_acc,poisoned_asr,corrected_asr,selected_defense
+backdoor,0.01,42,89.35,90.3,89.28,91.21111111111111,86.47777777777777,ft_sam_0.10
+backdoor,0.05,42,89.35,89.99,89.24,96.37777777777778,63.84444444444444,ft_sam_0.10
+backdoor,0.1,42,89.35,89.08,88.49,96.9888888888889,13.21111111111111,ft_sam_0.10
+backdoor,0.05,43,90.24,90.47,89.49,96.36666666666666,93.0,fine_prune_0.20
+backdoor,0.05,44,87.24,89.2,88.12,96.17777777777778,94.0111111111111,ft_sam_0.05
+label,0.01,42,89.35,89.78,89.08,,,cleanlab_both_remove
+label,0.05,42,89.35,86.95,87.6,,,cleanlab_both_remove
+label,0.1,42,89.35,78.88,79.84,,,cleanlab_both_replace_0.90
+label,0.05,43,90.24,87.33,88.65,,,cleanlab_both_remove
+label,0.05,44,87.24,85.56,87.1,,,cleanlab_prune_by_noise_rate_remove

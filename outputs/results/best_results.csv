@@ -1,0 +1,3 @@
+attack,source,seed,baseline,poisoned,corrected,defense,asr_before,asr_after
+label,layered,43,90.24,87.33,88.65,cleanlab_both_remove,,
+backdoor,historical,42,89.55,89.99,89.52,known_trigger_signature,95.33333333333333,1.2222222222222223

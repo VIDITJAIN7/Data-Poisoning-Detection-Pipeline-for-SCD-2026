@@ -1,0 +1,207 @@
+{
+  "experiment": "exp3_detection_pipeline",
+  "started_at": "2026-09-09T18:02:53.415545",
+  "config": {
+    "seed": 43,
+    "epochs": 30,
+    "batch_size": 512,
+    "learning_rate": 0.1,
+    "poison_rate": 0.05,
+    "device": "cuda"
+  },
+  "results": {
+    "training_history": [
+      {
+        "epoch": 1,
+        "loss": 2.4172633852767946,
+        "accuracy": 20.514
+      },
+      {
+        "epoch": 2,
+        "loss": 1.7233452174377442,
+        "accuracy": 35.696
+      },
+      {
+        "epoch": 3,
+        "loss": 1.5293706744384765,
+        "accuracy": 44.316
+      },
+      {
+        "epoch": 4,
+        "loss": 1.3561114232254028,
+        "accuracy": 51.236
+      },
+      {
+        "epoch": 5,
+        "loss": 1.225576397819519,
+        "accuracy": 56.458
+      },
+      {
+        "epoch": 6,
+        "loss": 1.1052059086799622,
+        "accuracy": 61.458
+      },
+      {
+        "epoch": 7,
+        "loss": 1.020999271965027,
+        "accuracy": 64.366
+      },
+      {
+        "epoch": 8,
+        "loss": 0.9357250175094605,
+        "accuracy": 68.004
+      },
+      {
+        "epoch": 9,
+        "loss": 0.8734157118415833,
+        "accuracy": 70.142
+      },
+      {
+        "epoch": 10,
+        "loss": 0.8019162077140808,
+        "accuracy": 72.954
+      },
+      {
+        "epoch": 11,
+        "loss": 0.708489017124176,
+        "accuracy": 76.204
+      },
+      {
+        "epoch": 12,
+        "loss": 0.6423374348640442,
+        "accuracy": 78.588
+      },
+      {
+        "epoch": 13,
+        "loss": 0.5915655744743347,
+        "accuracy": 80.348
+      },
+      {
+        "epoch": 14,
+        "loss": 0.5470449837112427,
+        "accuracy": 81.814
+      },
+      {
+        "epoch": 15,
+        "loss": 0.5257142059135437,
+        "accuracy": 82.656
+      },
+      {
+        "epoch": 16,
+        "loss": 0.4078874990177154,
+        "accuracy": 86.954
+      },
+      {
+        "epoch": 17,
+        "loss": 0.3668120711612701,
+        "accuracy": 88.36
+      },
+      {
+        "epoch": 18,
+        "loss": 0.3502375678253174,
+        "accuracy": 88.826
+      },
+      {
+        "epoch": 19,
+        "loss": 0.33604031361579895,
+        "accuracy": 89.37
+      },
+      {
+        "epoch": 20,
+        "loss": 0.3271145732498169,
+        "accuracy": 89.712
+      },
+      {
+        "epoch": 21,
+        "loss": 0.3139247930049896,
+        "accuracy": 90.252
+      },
+      {
+        "epoch": 22,
+        "loss": 0.30994668597221375,
+        "accuracy": 90.344
+      },
+      {
+        "epoch": 23,
+        "loss": 0.2957992798423767,
+        "accuracy": 90.72
+      },
+      {
+        "epoch": 24,
+        "loss": 0.2906837827634811,
+        "accuracy": 90.892
+      },
+      {
+        "epoch": 25,
+        "loss": 0.2852945268440247,
+        "accuracy": 91.184
+      },
+      {
+        "epoch": 26,
+        "loss": 0.25936957158088686,
+        "accuracy": 92.0
+      },
+      {
+        "epoch": 27,
+        "loss": 0.2564115222644806,
+        "accuracy": 92.362
+      },
+      {
+        "epoch": 28,
+        "loss": 0.25294758798599243,
+        "accuracy": 92.34
+      },
+      {
+        "epoch": 29,
+        "loss": 0.2489185319709778,
+        "accuracy": 92.346
+      },
+      {
+        "epoch": 30,
+        "loss": 0.24599007892608643,
+        "accuracy": 92.566
+      }
+    ],
+    "n_poisoned_samples": 2500,
+    "detectors": {
+      "loss_outlier": {
+        "true_pos": 107,
+        "false_pos": 2393,
+        "false_neg": 2393,
+        "precision": 0.0428,
+        "recall": 0.0428,
+        "f1": 0.0428,
+        "fpr": 0.05037894736842105
+      },
+      "spectral_signatures": {
+        "true_pos": 902,
+        "false_pos": 3733,
+        "false_neg": 1598,
+        "precision": 0.19460625674217907,
+        "recall": 0.3608,
+        "f1": 0.2528381219341275,
+        "fpr": 0.07858947368421053
+      },
+      "activation_clustering": {
+        "true_pos": 2355,
+        "false_pos": 19130,
+        "false_neg": 145,
+        "precision": 0.1096113567605306,
+        "recall": 0.942,
+        "f1": 0.19637273295809882,
+        "fpr": 0.40273684210526317
+      },
+      "knn_label_agreement": {
+        "true_pos": 139,
+        "false_pos": 2732,
+        "false_neg": 2361,
+        "precision": 0.04841518634622083,
+        "recall": 0.0556,
+        "f1": 0.05175944889219885,
+        "fpr": 0.05751578947368421
+      }
+    }
+  },
+  "elapsed_seconds": 225.18,
+  "finished_at": "2026-09-09T18:06:38.593912"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "config": {
+    "experiments": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "seed": 42,
+    "poison_rate": 0.05,
+    "epochs": 30,
+    "git_revision": "a5f323c1fbed4181d187c91a39340ad351bbd067"
+  },
+  "completed_experiments": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

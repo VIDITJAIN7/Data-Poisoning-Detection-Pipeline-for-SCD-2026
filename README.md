@@ -25,6 +25,23 @@ The selected label-flip solution recovered 1.32 pp from the poisoned model and
 remained 1.59 pp below its baseline. The selected backdoor solution reduced ASR
 to 1.22% while remaining 0.03 pp below its baseline. These are selected
 completed-run results; they are not averages across every run.
+
+## Combined A+B defense
+
+Solution A (Cleanlab label recovery) and Solution B (fine-prune / FT-SAM
+backdoor mitigation) can be stacked into one cleaning spec and ensembled at
+inference by averaging logits:
+
+```bash
+python -m pytest tests/test_combined_defense.py -q
+python scripts/run_combined_defense.py \
+    --label-ckpt path/to/label_solution.pt \
+    --backdoor-ckpt path/to/backdoor_solution.pt
+```
+
+`campaign/combined.py` unions Cleanlab removals with backdoor-flagged IDs
+(dropping conflicting label corrections) and provides `ensemble_logits` for
+the two selected checkpoints.
 Generic detector precision, recall, F1 and FPR were not persisted by this
 campaign, so the false-negative target is not claimed as passed. The earlier
 historical run did report weak generic detector performance; its known-trigger
